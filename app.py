@@ -14,6 +14,8 @@ app = dash.Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
     suppress_callback_exceptions=True  # Allows callbacks for dynamically generated components
 )
+server = app.server
+
 app.title = "NC Health Insights Dashboard"  # Updated Title
 
 # Server for deployment (if needed)
